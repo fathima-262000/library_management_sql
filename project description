@@ -1,0 +1,52 @@
+ 📚 Advanced Library Management System (LMS)
+
+A mini-project built using MySQL to demonstrate relational database design and query operations for a Library Management System. This project showcases how SQL can be used to efficiently manage books, members, borrow transactions, and fines.
+
+ 🛠️ Project Structure
+
+The LMS database includes four core tables:
+
+- Books: Stores information on each book.
+  - `BookID`, `Title`, `Author`, `Category`, `PublicationYear`, `CopiesAvailable`
+- **Members**: Contains details about library members.
+  - `MemberID`, `FirstName`, `LastName`, `Email`, `JoinDate`
+- BorrowTransactions: Tracks borrowing activity between members and books.
+  - `TransactionID`, `BookID`, `MemberID`, `BorrowDate`, `ReturnDate`
+- Fines: Manages fines related to late returns.
+  - `FineID`, `TransactionID`, `FineAmount`, `PaidStatus`
+
+ 📥 Data Insertion
+
+Sample entries:
+- 15 books from various categories.
+- 10 registered members.
+- 20 borrow transactions.
+- 5 fines (a mix of `paid` and `unpaid` statuses).
+
+🔍 SQL Queries and Operations
+
+The project includes various SQL query tasks:
+
+1. Recently Borrowed Books 
+   List all books borrowed in the last 30 days, along with member details.
+
+2. Borrow Count per Member  
+   Show total number of books borrowed by each member, grouped by member name.
+
+3. Top Borrowers  
+   Retrieve details of members with the highest number of borrow transactions.
+
+4. Price-based Subquery Example(generalized query for learning purpose)
+   Find products whose price is higher than the average price of all products.
+
+
+
+✅ Learning Objectives
+
+- Relational Database Design (Normalization, Foreign Keys)
+- Advanced SQL: Joins, Aggregation, Subqueries
+- Data Modeling for Real-world Systems
+- Query Optimization for Reporting
+
+
+
